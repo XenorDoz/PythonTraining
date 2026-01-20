@@ -7,15 +7,15 @@ It’s one of the easiest languages to learn, which makes it perfect for beginne
 
 ## Before starting
 
-Make sure everythin is installed and ready:
+Make sure everything is installed and ready:
 - [**Install python** ](../README.md#installing-python)
-- [**Set up Python in  your IDE**](../README.md#setting-up-python-for-your-ide)
+- [**Set up Python in your IDE**](../README.md#setting-up-python-for-your-ide)
 
 *Just in case, I've added extra tutorials in the [README.md](../README.md)*
 
 ## How to use the terminal
 
-This is a quick tutorial on how to use the terminal.  
+This is a quick tutorial on how to use the terminal. Don’t worry, you’ll get used to it quickly — you only need a few commands.  
 You can skip to [How to run a Python file](#how-to-run-a-python-file) if you already know !
 
 First of all, you need to open a terminal :
@@ -45,14 +45,14 @@ To execute a Python script, you need to:
 A few important notes :
 - The file **must** end with `.py`
 - The terminal's **current folder matters** 
-- If Python is installed correctly, it should run without erros
+- If Python is installed correctly, it should run without errors
 - If nothing happens, check that you typed the command right
 
 This is the basic workflow you'll use to run any script.
 
 ## Time to test !
 
-Every exercise will be in the folder corresponding the lesson.  
+Every exercise will be in the folder corresponding to the lesson.  
 As an example, this lesson is named `00_introduction` in the folder `lessons`, so the corresponding exercises are in `exercises/00_introduction`.  
 
 In this folder, you'll find:
