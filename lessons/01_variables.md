@@ -49,6 +49,25 @@ print(f"My favorite number is {myNumber}!")
 → My favorite number is 42!
 ```
 
+Something that can be useful to know, using `#` makes what's after a comment, and is not read by the script.  
+To do it on multiple lines, write `"""` at the beginning and at the end of your comment.  
+*This technically creates a string, named "docstring", but if it's not used then Python will simply ignore it.*  
+
+Use it to explain what you do!
+
+```python
+a = 5 
+# This is a comment
+b = 6
+c = "Hi!" # You can also put it directly next to a line!
+"""
+Everything between the quotes
+Will not be used in the script
+You can do as many lines as you want!
+"""
+print(c) # This should print "Hi!" in the terminal
+```
+
 # Time to try!
 
 You should now try to use print and variables!
