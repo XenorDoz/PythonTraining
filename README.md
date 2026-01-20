@@ -1,8 +1,9 @@
 <!-- omit in toc -->
 # This is a training on python stuff
 
-This git contains some exercises to help learning python, with one solution for each.  
-You can either get the whole git so you get the base file and the correction, or just go to the exercises:
+This git contains some [lessons](lessons/) or [exercises](exercises/) to help learning python, with some [solution](/solutions/) for each.  
+You can either get the whole git so you get the base file and the correction, or just go to the [lessons](lessons/) or [exercises](exercises/):
+
 - [How to get the files](#how-to-get-the-files)
   - [Get git](#get-git)
   - [How to use git](#how-to-use-git)
@@ -17,7 +18,6 @@ You can either get the whole git so you get the base file and the correction, or
   - [PyCharm](#pycharm)
   - [Other IDEs](#other-ides)
 - [How to run Python](#how-to-run-python)
-- [Exercises](#exercises)
 
 ## How to get the files
 
@@ -45,7 +45,7 @@ If you want to use Git (recommended but not necessary):
    ```
 
 And you have all the files !  
-You can now continue to learn how to use git, skip to either [installing python](#installing-python) if you have not installed it, or go directly to the [exercises](#exercises) !
+You can now continue to learn how to use git, skip to either [installing python](#installing-python) if you have not installed it, or go directly to the [lessons](lessons/) !
 ___
 ### How to use git
 - [Create a repo (fully optional)](#create-a-repo)
@@ -143,7 +143,7 @@ If you don't want to use Git, no worries !
 5. **Open** the folder in your editor
 
 And you now have every file !  
-If you need to install python, continue reading, otherwise head to the [exercises](#exercises) !
+If you need to install python, continue reading, otherwise head to the [lessons](lessons/) !
 
 ## Installing python
 
@@ -187,4 +187,4 @@ python myFile.py
 ```
 *If you want to run exercise4.py, do `python exercise4.py`*
 
-## Exercises
+# You're all done ! 
