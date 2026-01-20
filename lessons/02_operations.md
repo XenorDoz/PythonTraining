@@ -109,4 +109,4 @@ print(f"The result is {a+b}")   # The result is 12
 
 #### Exercise 4
 To recap everything, here's a challenge:   
-Try to display `5 + 3 = 8` using the given variables, an f-string and an operation inside the f-string!
+Try to display `5 + 3 = 8` using the given variables, an f-string and an operation inside the f-string, using any number is forbidden!
