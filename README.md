@@ -1,24 +1,23 @@
+<!-- omit in toc -->
 # This is a training on python stuff
 
 This git contains some exercises to help learning python, with one solution for each.  
 You can either get the whole git so you get the base file and the correction, or just go to the exercises:
-
-- [This is a training on python stuff](#this-is-a-training-on-python-stuff)
-  - [How to get the files](#how-to-get-the-files)
-    - [Get git](#get-git)
-    - [How to use git](#how-to-use-git)
-      - [Create a repo (optional)](#create-a-repo-optional)
-      - [Save your work](#save-your-work)
-      - [Upload your work](#upload-your-work)
-      - [Get the latest updates](#get-the-latest-updates)
-    - [Download everything](#download-everything)
-  - [Installing python](#installing-python)
-  - [Setting up Python for your IDE](#setting-up-python-for-your-ide)
-    - [VS Code](#vs-code)
-    - [PyCharm](#pycharm)
-    - [Other IDEs](#other-ides)
-  - [How to run Python](#how-to-run-python)
-  - [Exercises](#exercises)
+- [How to get the files](#how-to-get-the-files)
+  - [Get git](#get-git)
+  - [How to use git](#how-to-use-git)
+    - [Create a repo (optional)](#create-a-repo-optional)
+    - [Save your work](#save-your-work)
+    - [Upload your work](#upload-your-work)
+    - [Get the latest updates](#get-the-latest-updates)
+  - [Download everything](#download-everything)
+- [Installing python](#installing-python)
+- [Setting up Python for your IDE](#setting-up-python-for-your-ide)
+  - [VS Code](#vs-code)
+  - [PyCharm](#pycharm)
+  - [Other IDEs](#other-ides)
+- [How to run Python](#how-to-run-python)
+- [Exercises](#exercises)
 
 ## How to get the files
 
