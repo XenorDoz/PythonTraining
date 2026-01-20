@@ -81,6 +81,9 @@ What's your favorite number?
 Be careful, we want 42 as an **integer**, not a string!
 
 ## Exercise 2
+Now that you understand how printing work, time to do the ritual that every new developper does: display "Hello world!" in your terminal!
+
+## Exercise 3
 Now, try to do the same but with variables!  
 1. Define the variable `myText` and put the question in.  
 2. Define the variable `favoriteNumber` and put your favorite number in.  
