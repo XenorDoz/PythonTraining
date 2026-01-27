@@ -174,3 +174,76 @@ Then, do it again, but this time count from `b` to `a` (included)!
 Ask for a number, and count until the number becomes odd!
 - If the number is even, divide it by 2 and display the result and continue
 - If the number is odd, display the result and stop the loop
+
+## `break` and `continue`
+
+Sometimes, you want to stop a loop *before* the condition becomes false.  
+This can be useful when for example you search for an item through a list of variables: once you've found it, you don't need to continue seraching for it anymore!  s
+The `break` keyword immediately stops the loop:
+
+```python
+i = 1
+
+while i <= 10:
+    if i == 5:
+        break
+    print(i)
+    i = i + 1
+
+print("Done!")
+# 1
+# 2
+# 3
+# 4
+# Done!
+```
+
+When `i` will be 5, this will instantly get out of the loop, and continue the script.
+
+You can also want to **skip** the rest of the loop and go directly to the next iteration. This can be usefull when you want to skip specific values, but still act on the next ones.  
+You'll use the `continue` keyword for that:
+
+```python
+i = 0
+
+while i < 5:
+    i += 1 # Means i = i + 1
+    if i == 3: 
+        continue
+    print(i)
+
+# 1
+# 2
+# 4
+# 5
+```
+
+## Last exercises!
+
+#### Exercise 7
+
+Ask for a number `n`, and:
+- If `n` is 0, stop the loop using `break`.  
+- Otherwise, display `n` and ask again.
+
+#### Exercise 8
+
+Ask for a number `n`, and:
+- If `n` is negative, skip it using `continue`
+- If `n` is 0, stop the loop
+- Otherwise, display `n` and ask a new number  
+
+Try to script conditions in that order and to only use the `if` statement, no `elif` and no `else`! You don't have to, but it's a great plus if you do it that way!
+  
+*We only use `if` statements so each condition is evaluated independently.  
+This avoids unnecessary work inside the loop and keeps the code cleaner,more efficient and more understandable for us.*
+
+
+#### Exercise 9
+
+Let's redo the exercise 6!
+Ask for a number, and :
+- If it is even, divide it by 2, display the result and repeat the loop
+- If it is odd, stop the loop
+
+*You can also try to code only using `if` statement!*
