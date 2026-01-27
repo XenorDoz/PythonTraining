@@ -1,6 +1,6 @@
 # Loops in Python
 
-## Introduction
+## 1. Introduction
 
 Until now, every instruction in your code was executed once, in order.  
 But what if you want to repeat something? What if you want to run the same action 5 times, 10 times… or until a condition is met?
@@ -19,7 +19,7 @@ Then we'll see the `while` loop, perfect when you *don't know* yet.
 
 Finally, we'll look at `break` and `continue` to control your loops more precisely.
 
-## The `for` loop
+## 2. The `for` loop
 
 Sometimes, you know exactly how many times you want to repeat something.  
 For example, you could print something 5 times, count from 1 to 10 or go through a list of items.
@@ -41,7 +41,7 @@ for i in range(5):
 
 This will print "Hello!" five times. The variable `i` takes each value from the sequence, one by one.  
 
-## `range()`
+## 3. `range()`
 
 The `range()` function creates a sequence of numbers. It's most often used with `for` loops.
 
@@ -96,7 +96,7 @@ for i in range(5,0,-1):
 # 1
 ```
 
-## Let's train the `for` loops!
+## 4. Let's train the `for` loops!
 
 Now that you know how `for` and `range()` work, let's practice!  
 *I don't think you'll need any example file for math like this*
@@ -115,7 +115,7 @@ Improve!
 Ask two numbers `a` and `b` and compute the sum of every number between both (included)!
 Then, do it again, but this time count from `b` to `a` (included)!
 
-## The `while` loop
+## 5. The `while` loop
 
 The `for` loop is perfect when you *know* how many times you want to repeat something.  
 But sometimes, you don't know yet.  
@@ -154,7 +154,7 @@ Useful sometimes, but dangerous if accidental.
 
 *Just in case you find yourself in an infinite loop, you can press `Ctrl` + `C` at the same time to stop the program (works in most terminals)*
 
-## Let's try the `while` loops
+## 6. Let's try the `while` loops
 
 Now that you saw how `while` loops work, let's use them!
 
@@ -175,7 +175,7 @@ Ask for a number, and count until the number becomes odd!
 - If the number is even, divide it by 2 and display the result and continue
 - If the number is odd, display the result and stop the loop
 
-## `break` and `continue`
+## 7. `break` and `continue`
 
 Sometimes, you want to stop a loop *before* the condition becomes false.  
 This can be useful when for example you search for an item through a list of variables: once you've found it, you don't need to continue seraching for it anymore!  s
@@ -218,7 +218,7 @@ while i < 5:
 # 5
 ```
 
-## Last exercises!
+## 8. Last exercises!
 
 #### Exercise 7
 
