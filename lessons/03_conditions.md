@@ -189,9 +189,9 @@ ___
 #### Exercise 2
 
 Ask the user a price, and apply a reduction depending on the value:
-- If price is equal or above to `100`USD, apply a reduction of `10%`  
-- Otherwise, if price is equal or above to `50`USD, apply a reduction of `5`USD
-- Otherwise, if price is equal or above to `20`USD, apply a reduction of `1`USD
+- If price is above or equal to `100`USD, apply a reduction of `10%`  
+- Otherwise, if price is above or equal to `50`USD, apply a reduction of `5`USD
+- Otherwise, if price is above or equal to `20`USD, apply a reduction of `1`USD
   
 *You don't have to manage the "USD", simply ask a number and that's it.*  
 *Also, we assume that the price is positive or equal to 0.*
@@ -204,7 +204,7 @@ ___
 
 Ask a number, and check if it is **even**, **greater than 10** or both!
 
-*The file`data03.md` can be used for your tests too!*
+*The file `data03.md` can be used for your tests too!*
 ___
 #### Exercise 04
 
