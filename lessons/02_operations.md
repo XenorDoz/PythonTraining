@@ -15,6 +15,7 @@ In Python, you can use several basic operations:
 - Division `/`
 - Integer division `//`
 - Modulo `%`
+- Power `**`
 
 To use them, simply write a number, then the operator, then another number — and that's it!  
 You can do that when you define a variable, redefine it, or when you display it for example:
@@ -31,6 +32,7 @@ print(a / b)  # 3.3333
 print(c)      # 17
 print(c // 5) # 3
 print(c % 5)  # 2
+print(b ** 2) # 9
 ```
 
 #### **Exercise 1**
@@ -41,6 +43,7 @@ Let's try to do some basic maths! Try to display results of:
 - 63 / 7
 - 22 - 4
 - 14 // 4
+- 2 ** 3
 - 8 % 3
   
 #### **Exercise 2**
