@@ -13,9 +13,9 @@ secret = 6                                            # Choose your secret numbe
 guess = int(input("Choose a number between 1 and 10: "))   # Ask the user for their guess
 
 # Write your conditions here:
-if guess == 6:
+if guess == secret:
     print("Correct!")
-elif guess <= 6:
+elif guess <= secret:
     print("Too low!")
 else:
     print("Too high!")
