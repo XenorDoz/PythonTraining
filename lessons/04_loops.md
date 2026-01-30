@@ -123,8 +123,8 @@ The `for` loop is perfect when you *know* how many times you want to repeat some
 But sometimes, you don't know yet.  
 Maybe you want to repeat something:
 - until a number reaches a certain value
-- until the user types something calid
-- until a condition becomes fales
+- until the user types something valid
+- until a condition becomes false
 
 That's what the `while` loop is for.
 
