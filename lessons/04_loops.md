@@ -112,8 +112,10 @@ Ask a number `n` and display the sum of every number from 1 to `n` (included)!
 #### Exercise 3
 
 Improve!  
-Ask two numbers `a` and `b` and display every number between both (included)!
+Ask two numbers `a` and `b` and display every number between both (included)!  
 Then, do it again, but this time count from `b` to `a` (included)!
+
+*We assume that `a` is lesser than `b`*
 
 ## 5. The `while` loop
 
