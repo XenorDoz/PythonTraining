@@ -2,12 +2,12 @@ sentence = "I like coffee"
 
 # Turn the sentence into a list of words using split() and display it
 
-wordsList = sentence.split()
-print(wordsList)
+words_list = sentence.split()
+print(words_list)
 
 # Grab the last word and put it in a variable named `word`
 
-word = wordsList[-1]
+word = words_list[-1]
 print(word)
 
 # Create a list `characters` from the variable `word` using `list()` and display it

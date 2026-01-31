@@ -18,6 +18,7 @@ while position <= b:
 
 
 # Now backwards! (from b to a, included)
+
 position = b
 while position >= a:
     print(position)

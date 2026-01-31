@@ -1,12 +1,12 @@
 # Add the variable myText here!
 
-myText = "What's your favorite number?"
+my_text = "What's your favorite number?"
 
 # Add the variable favoriteNumber here!
 
-favoriteNumber = 42
+favorite_number = 42
 
 # Complete the prints now!
-print(myText)
-print(favoriteNumber)
-print(f"Your favorite number is {favoriteNumber}!")
+print(my_text)
+print(favorite_number)
+print(f"Your favorite number is {favorite_number}!")

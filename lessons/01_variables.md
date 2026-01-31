@@ -11,8 +11,8 @@ Be careful: **numbers inside a string are not real numbers**, so you cannot comp
 Here are some examples :
 
 ```python
-myNumber = 42
-myString = "This is more than 10 characters long!"
+my_number = 42
+my_string = "This is more than 10 characters long!"
 ```
 
 There are also a few rules for naming variables:
@@ -33,10 +33,10 @@ You have different options :
 
 With the previous examples, here are some examples :
 ```python
-print(myNumber)
+print(my_number)
 → 42
 
-print(myString)
+print(my_string)
 → This is more than 10 characters long!
 
 print("Hi everyone!")

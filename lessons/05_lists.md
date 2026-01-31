@@ -19,7 +19,7 @@ Lists are extremely flexible: they can store numbers, strings, booleans, or even
 You can start with an empty list and fill it later:
 
 ```python
-myList = []
+my_list = []
 ```
 
 This is useful when you don't know the values yet, or when you want to build the list step by step.
