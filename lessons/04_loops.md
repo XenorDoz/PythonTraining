@@ -168,7 +168,7 @@ Ask a number `n` and display the sum of every number from 1 to `n` (included)!
 #### Exercise 5
 
 Now, same as exercise 3, but with a while loop!  
-Ask two numbers `a` and `b` and compute the sum of every number between both (included)!
+Ask two numbers `a` and `b` and display every number between both (included)!
 Then, do it again, but this time count from `b` to `a` (included)!
 
 #### Exercise 6
