@@ -180,7 +180,7 @@ Ask for a number, and count until the number becomes odd!
 ## 7. `break` and `continue`
 
 Sometimes, you want to stop a loop *before* the condition becomes false.  
-This can be useful when for example you search for an item through a list of variables: once you've found it, you don't need to continue seraching for it anymore!  s
+This can be useful when for example you search for an item through a list of variables: once you've found it, you don't need to continue seraching for it anymore!  
 The `break` keyword immediately stops the loop:
 
 ```python
