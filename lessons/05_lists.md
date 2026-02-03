@@ -1,4 +1,4 @@
-# The lists
+# Lists, tuples & Dictionaries
 
 Working with a single value is useful, but very limiting.  
 Often, you need to store **multiple pieces of data** at the same time: several numbers, several words... And a single variable isn't enough for that.
@@ -67,7 +67,7 @@ An index is the position of an element in the list.
 
 In Python, the first element is at index `0`, the second at index `1`, and so on.
 
-You can access any value by providing the index to the variable like this:
+You can access any value by using its index, like this:
 ```python
 numbers = [10, 20, 30, 40]
 
@@ -98,15 +98,15 @@ This is very useful when you want the last value without knowing the list's size
 #### Slicing: reading multiple values at once
 
 You can read a part of the list using the slicing syntax:
-- `myList[start:end]` → from `start` to `end - 1`
-- `myList[:]` → the whole list (a copy)
+- `my_list[start:end]` → from `start` to `end - 1`
+- `my_list[:]` → the whole list (a copy)
 
 ```python
 print(numbers[1:3]) # [20, 30]
 print(numbers[:])   # [10, 20, 30, 40]
 ```
 
-Slicing never causes an error, even if the indexes go beyond the list.
+Slicing never raises an error, even if the slices goes beyond the list boundaries.
 
 #### The `len()` function
 
@@ -148,7 +148,7 @@ items.append("water")
 print(items)    # ["coffee", "tea", "water"]
 ```
 
-This is the most common way to grow a list.
+This is the most common way to add new elements a list.
 
 #### Removing a value: `remove()`
 
@@ -292,3 +292,244 @@ Given the variable `sentence = "I like coffee"`:
 4. Display the length of that list in two different ways:
     - using the list `characters`
     - using the string `word`
+  
+## 7. Tuples
+
+Sometimes you want a sequence of values, just like a list, but you want to make sure **nobody can modify it**.
+
+That's what **tuples** are for.
+
+A tuple is almost the same as a list, except for one key difference: **tuples are immutable**.  
+You cannot add, remove, or change elements once the tuple is created.
+
+### Defining a tuple
+
+A tuple uses **parentheses** instead of brackets:
+
+```python
+numbers = (10, 20, 30)
+words = ("coffee", "tea", "water")
+```
+
+You can also mix types:
+
+```python
+mixed = (10, "hello", True)
+```
+
+A tuple with a single value needs a comma:
+
+```python
+single = (42,)
+```
+
+Without the comma, Python thinks it's just a number.
+
+### Reading a tuple
+
+Tuples behave exactly like lists for reading:
+- `tuple[0]` → first element
+- `tuple[-1]` → last element
+- `tuple[1:3]` → slicing
+- `len(tuple)` → number of elements  
+
+Everything you learned about **reading** a list also works with tuples.
+
+### Why use tuples?
+
+Tuples are useful when:
+- The data should **never change**
+- You need a sequence that is **faster** and **lighter** than a list
+- You want to use the sequence as a **dictionary key**
+  
+Tuples are perfect for fixed data like coordinates, dates, RGB colors...
+
+## 8. Dictionaries
+
+Lists and tuples let you store multiple values, but you always access them using **indexes**.  
+Sometimes, this is not what you want. What if you want to access a value using a **name** instead of a number ?  
+That's exactly what **dictionaries** are for.
+
+A dictionary stores data as **key → value** pairs.  
+You choose the key, and Python gives you the value.
+
+It works just like a real dictionary: you look up a word (the key) to get its definition (the value).
+
+### Defining a dictionary
+
+A dictionary uses **curly braces** `{}` and contains pairs separated by commas.  
+Each pair has:
+- a **key** (usually a string, but can be anything)
+- a **value** (anything you want)
+
+```python
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "Paris"
+    }
+```
+
+Keys must be **unique**.  
+If you repeat a key, the last value replaces the previous one.
+
+Values can be: 
+- numbers
+- strings
+- lists
+- dictionaries
+- booleans
+- anything
+
+### Reading values from a dictionary 
+
+You access a value using its key:
+
+```python
+print(person["name"])   # Alice
+print(person["age"])   # 25
+```
+
+If the key doesn't exist, Python shows a **KeyError**.  
+To avoid errors, you can use `get()`:
+
+```python
+print(person.get("job"))    # None
+```
+
+`get()` returns `None` instead of crashing.
+
+### Modifying a dictionary
+
+Dictionaries are **mutable**, just like lists.  
+You can change a value:
+
+```python
+person["age"] = 26
+```
+
+You can add a new key:
+
+```python
+person["job"] = "developer"
+```
+
+Python updates the dictionary immediately.
+
+### Removing values
+
+You can remove a key using `pop()`:
+
+```python
+person.pop("city")
+```
+
+This removes the key and returns its value.
+
+You can remove everything using `clear()`:
+
+```python
+person.clear()
+```
+
+### Checking if a key exists
+
+You can test if a key is present:
+
+```python
+"name" in person    # True
+"salary" in person  # False
+```
+
+This is extremely useful when processing user input or external data.
+
+### Why use dictionaries?
+
+Dictionaries are perfect when:
+- you want to store **structured data**
+- you want to access values by **name**, not by index
+- you need fast lookups
+- you want to group related information
+  
+They are used everywhere in Python:
+- JSON files
+- APIs
+- configurations
+- databases
+- user profiles
+- game objects
+  
+Here's how you would represent a player for example:
+```python
+player = {
+    "name": "Xen",
+    "level": 12,
+    "hp": 87,
+    "coords": (13, 42),
+    "inventory": ["sword", "potion", "shield"]
+}
+```
+
+This is much clearer than using a list like:
+
+```python
+["Xenor", 12, 87, (13, 42),["sword", "potion", "shield"]]
+```
+
+## 9. Last exercises!
+
+#### Exercise 4
+
+Given the tuple:  
+`coords = (12, 5, 9, 3, 5, 12)` 
+
+Do the following:
+1. Display the first value and the last value.
+2. Display the length of the tuple using `len()`.
+3. Display all values except the first two (use slicing).
+4. Display how many times the value `12` appears in the tuple (hint: use `tuple.count()`).
+
+#### Exercise 5
+
+Start with the dictionary:
+`player = {"name": "Alex", "level": 3, "hp": 20}`  
+Do the following steps in order, and display the dictionary after each one:
+1. Change the `"level"` value to `4`
+2. Add a new key `"weapon"` with the value `"sword"`
+3. Remove the key `"hp"` using `pop()`, store the removed value in a variable named `removed_hp`, and display it.
+4. Check if the key `"armor"` exists in the dictionary and display the result.
+
+#### Exercise 6
+
+You are given the following dictionary representing temperatures on a grid:
+
+```python
+temps = {
+    (0, 0): 12,
+    (0, 1): 14,
+    (1, 0): 15
+}
+```
+
+Do the following:
+1. Display the temperature at position `(0, 1)`
+2. Add a new temperature at position `(1, 1)` with the value `18`
+3. Replace the temperature at position `(0,0)` with `10`
+4. Display all the keys from the dictionary (hint: use `temps.keys()`)
+
+#### Exercise 7
+
+Given the following data:
+
+```python
+students = [
+    ("Alice", 15),
+    ("Bob", 12),
+    ("Charlie", 17)
+]
+```
+
+Do the following:
+1. Create a dictionary named `grades` where each key is the student's name and each value is their grade.
+2. Display the grade of `"Charlie"`.
+3. Add a new student `"Diana"` with grade 14 in the dictionary.
