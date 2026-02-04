@@ -271,7 +271,7 @@ Given the list `[4, 9, 2, 7, 5]`, display the output of each line:
 - the first value.
 - the second to last value *(use a negative index)*.
 - every value except the first and last one *(use a positive index then a negative index)*.
-
+___
 ### Exercise 2
 
 Start with the following `drinks` list : `["coffee", "tea", "water"]`  
@@ -282,7 +282,7 @@ Do the following steps in order, and display at each end of step:
 4. Remove the value at index `1` using `pop()`, store it in a variable named `removed`, and print the variable.
 
 *Observe how the list changes with every modification you do!*
-
+___
 ### Exercise 3
 
 Given the variable `sentence = "I like coffee"`:
@@ -488,7 +488,7 @@ Do the following:
 2. Display the length of the tuple using `len()`.
 3. Display all values except the first two (use slicing).
 4. Display how many times the value `12` appears in the tuple (hint: use `tuple.count()`).
-
+___
 ### Exercise 5
 
 Start with the dictionary:
@@ -498,7 +498,7 @@ Do the following steps in order, and display the dictionary after each one:
 2. Add a new key `"weapon"` with the value `"sword"`
 3. Remove the key `"hp"` using `pop()`, store the removed value in a variable named `removed_hp`, and display it.
 4. Check if the key `"armor"` exists in the dictionary and display the result.
-
+___
 ### Exercise 6
 
 You are given the following dictionary representing temperatures on a grid:
@@ -516,7 +516,7 @@ Do the following:
 2. Add a new temperature at position `(1, 1)` with the value `18`
 3. Replace the temperature at position `(0,0)` with `10`
 4. Display all the keys from the dictionary (hint: use `temps.keys()`)
-
+___
 ### Exercise 7
 
 Given the following data:

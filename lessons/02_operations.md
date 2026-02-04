@@ -45,7 +45,7 @@ Let's try to do some basic maths! Try to display results of:
 - 14 // 4
 - 2 ** 3
 - 8 % 3
-  
+___
 ### Exercise 2
 
 Now, let's use some variables to make it a bit more complex!  
@@ -73,7 +73,7 @@ You can also repeat a string using `*`:
 ```python
 print("ha" * 3)     # hahaha
 ```
-
+___
 ### Exercise 3
 
 Try to join "cof" and "fee", then display it 4 times in the same string using operations!  
@@ -109,7 +109,7 @@ a = 5
 b = 7
 print(f"The result is {a+b}")   # The result is 12
 ```
-
+___
 ### Exercise 4
 To recap everything, here's a challenge:   
 Try to display `5 + 3 = 8` using the given variables, an f-string and an operation inside the f-string, using any number is forbidden!
