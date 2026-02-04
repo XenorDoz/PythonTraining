@@ -209,3 +209,66 @@ Good code is not code that "works".
 Good code is code that is **clear**.
 
 # 10. Exercises!    
+
+### Exercise 1
+
+Write a function `square(n)` that returns the square of a number.  
+Then:
+1. Ask the user for a number using `input()`.
+2. Convert it to an integer.
+3. Call the function and print the result, without printing inside the function.
+___
+
+### Exercise 2
+
+Write a function `repeat()` that prints `text` a certain number of times.  
+You'll give it:
+- a parameter `text`: the text to print
+- a parameter `times`: the number of times it is printed, it should be 3 by default
+
+The function should print the result directly
+___
+
+### Exercise 3
+
+Write a function `analyze(a, b)` that returns:
+- their sum
+- their difference
+- their product
+
+Then ask for two numbers, call the function and display the three results on separate lines.  
+*The function should not display the results, only returning them.*
+___
+
+### Exercise 4
+
+Given the following code:
+
+```python
+x = 10
+
+def modify():
+    x = 5
+    print("Inside:", x)
+```
+
+1. Predict what will be printed.
+2. Call the function.
+3. Print `x` again outside the function.
+4. Explain why the two values are different.
+___
+
+### Exercise 5
+
+Create three functions:
+- `ask_number()` → asks the user for a number and returns it
+- `compute_total(a, b)` → returns the sum of two numbers
+- `show_result(value)` → prints `The result is: <value>`
+
+Then, write a small program that uses these three functions to:
+1. ask for two numbers
+2. compute their total
+3. display the result
+
+*You can do the small program in multiple lines, or in one line!*  
+*Although it is strongly recommended to do it on multiple lines for readability*
