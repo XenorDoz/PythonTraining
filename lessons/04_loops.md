@@ -104,11 +104,11 @@ Now that you know how `for` and `range()` work, let's practice!
 ### Exercise 1
 
 Ask a number `x` and display its multiplication table from 0 to 10 (included)!
-
+___
 ### Exercise 2
 
 Ask a number `n` and display the sum of every number from 1 to `n` (included)!
-
+___
 ### Exercise 3
 
 Improve!  
@@ -116,7 +116,7 @@ Ask two numbers `a` and `b` and display every number between both (included)!
 Then, do it again, but this time count from `b` to `a` (included)!
 
 *We assume that `a` is lesser than `b`*
-
+___
 # 5. The `while` loop
 
 The `for` loop is perfect when you *know* how many times you want to repeat something.  
@@ -164,19 +164,19 @@ Now that you saw how `while` loops work, let's use them!
 
 Let's try to redo the exercise 2, but with a while loop!
 Ask a number `n` and display the sum of every number from 1 to `n` (included)!
-
+___
 ### Exercise 5
 
 Now, same as exercise 3, but with a while loop!  
 Ask two numbers `a` and `b` and display every number between both (included)!
 Then, do it again, but this time count from `b` to `a` (included)!
-
+___
 ### Exercise 6
 
 Ask for a number, and count until the number becomes odd!
 - If the number is even, divide it by 2 and display the result and continue
 - If the number is odd, display the result and stop the loop
-
+___
 # 7. `break` and `continue`
 
 Sometimes, you want to stop a loop *before* the condition becomes false.  
