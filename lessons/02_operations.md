@@ -1,12 +1,12 @@
 # Basic operations
 
-## 1. Introduction
+# 1. Introduction
 
 Now that you know how to define variables and display them, it's time to **use them**!  
 In this lesson, you'll learn how to make Python do math, combine text, and create your own expressions.
 
 
-## 2. Arithmetic operations
+# 2. Arithmetic operations
 
 In Python, you can use several basic operations:
 - Addition `+`
@@ -35,7 +35,7 @@ print(c % 5)  # 2
 print(b ** 2) # 9
 ```
 
-#### **Exercise 1**
+### Exercise 1
 
 Let's try to do some basic maths! Try to display results of:
 - 12 * 8
@@ -46,7 +46,7 @@ Let's try to do some basic maths! Try to display results of:
 - 2 ** 3
 - 8 % 3
   
-#### **Exercise 2**
+### Exercise 2
 
 Now, let's use some variables to make it a bit more complex!  
 Let x be 5, y be 14, z be 2.  
@@ -58,7 +58,7 @@ Compute:
 - y % x
 - (x + z) * (y / 2) - (y % x)
 
-## 3. String operations
+# 3. String operations
 
 Operations also work with strings!
 
@@ -74,12 +74,12 @@ You can also repeat a string using `*`:
 print("ha" * 3)     # hahaha
 ```
 
-#### **Exercise 3**
+### Exercise 3
 
 Try to join "cof" and "fee", then display it 4 times in the same string using operations!  
 *You can either use variables, or directly print it (directly displaying it is harder).* 
 
-## 4. Mixing types
+# 4. Mixing types
 
 You **cannot** mix numbers and strings directly:
 ```python
@@ -101,7 +101,7 @@ number = 42
 print("My number is " + str(number))    # My number is 42
 ```
 
-## 5. Operations inside f-string
+# 5. Operations inside f-string
 
 Remember the f-strings? Well, instead of using a variable, you can directly use an operation!
 ```python
@@ -110,6 +110,6 @@ b = 7
 print(f"The result is {a+b}")   # The result is 12
 ```
 
-#### Exercise 4
+### Exercise 4
 To recap everything, here's a challenge:   
 Try to display `5 + 3 = 8` using the given variables, an f-string and an operation inside the f-string, using any number is forbidden!

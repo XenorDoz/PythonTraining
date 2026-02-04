@@ -1,7 +1,7 @@
 
 # Conditions
 
-## 1. Introduction
+# 1. Introduction
 
 You might want to allow your code to **make decisions**.  
 Instead of always doing the same thing, your program can choose **what to do** depending on a value, a comparison..  
@@ -12,7 +12,7 @@ It's as if the code would ask itself:
 Conditions are **essential** to create interactive programs, react to user input, check values, and control the flow of your script.  
 You'll use them everywhere — from simple checks to full program logic.
 
-## 2. Comparisons
+# 2. Comparisons
 
 Before making decisions, Python needs a way to **compare values**.  
 A condition is always based on something that is either `True` or `False`, so we use comparison operators to check if two values match, differ, or how they relate.  
@@ -27,7 +27,7 @@ These comparisons are the foundation of every `if` statement, so let's look at t
 
 Each of these expressions produces a **boolean** (`True` or `False`), which is exactly what an `if` statement needs.
 
-## 3. if / elif / else
+# 3. if / elif / else
 
 Once you can compare values, you can use them inside a condition.  
 Python will execute the following block of code **only if the condition is true**, otherwise it'll ignore that block and try the `elif` (means "else if"), or if this fails again, do the `else` block, or simply continues the script.  
@@ -113,7 +113,7 @@ else:
 
 **This is the core of decision-making.**
 
-## 4. Combining conditions
+# 4. Combining conditions
 
 Sometimes one condition isn't enough.  
 You may want to check **several things at the same time**, or invert a condition.  
@@ -140,7 +140,7 @@ if not (age == 21):
 These combinations let you create more precise and flexible decisions in your programs.
 
 
-## 5. Using input()
+# 5. Using input()
 
 To make your conditions interactive, you can ask the user for a value using `input()`, and type what will be display in your terminal in the `()`.  
 
@@ -162,7 +162,7 @@ else:
     print("You're younger than 20!")
 ```
 
-## 6. Common mistakes
+# 6. Common mistakes
 
 Here are the most frequent errors when working with conditions:
 - Using `=` instead of `==` inside an `if`
@@ -174,19 +174,19 @@ Here are the most frequent errors when working with conditions:
 
 These small mistakes are normal at the beginning, but easy to avoid once you know them.
 
-## 7. Let's try!
+# 7. Let's try!
 
 That was a lot of information, but each part is important to really understand how conditions work.
 
 Now it's time to practice with some small exercises using everything you've just learned: comparisons, if/elif/else, combined conditions, and input().
 
-#### Exercise 1
+### Exercise 1
 
 Ask the user a number, and display if it's positive, negative or equal to 0!
 
 *The file `data01.md` can be used for your tests, copy the values and check if the answer displayed is correct!*
 ___
-#### Exercise 2
+### Exercise 2
 
 Ask the user a price, and apply a reduction depending on the value:
 - If price is above or equal to `100`USD, apply a reduction of `10%`  
@@ -200,13 +200,13 @@ Ask the user a price, and apply a reduction depending on the value:
 
 **Bonus:** Display the value with a f-string!
 ___
-#### Exercise 3
+### Exercise 3
 
 Ask a number, and check if it is **even**, **greater than 10** or both!
 
 *The file `data03.md` can be used for your tests too!*
 ___
-#### Exercise 04
+### Exercise 04
 
 **Challenge time!**
 
