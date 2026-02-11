@@ -531,5 +531,5 @@ students = [
 
 Do the following:
 1. Create a dictionary named `grades` where each key is the student's name and each value is their grade.
-2. Display the grade of `"Charlie"`.
-3. Add a new student `"Diana"` with grade 14 in the dictionary.
+2. Display the grade of `"Charlie"` from the dictionary.
+3. Add a new student `"Diana"` with grade `14` in the dictionary.

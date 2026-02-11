@@ -28,7 +28,7 @@ print(removed_hp)
 print(player)
 
 # Check if the key `"armor"` exists in the dictionary and display the result
-# You should not make the script but with an error!
+# You should not make the script bug with an error!
 
 
 

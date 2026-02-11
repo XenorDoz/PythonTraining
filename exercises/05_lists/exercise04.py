@@ -17,5 +17,5 @@ coords = (12, 5, 9, 3, 5, 12)
 
 
 
-# Display how many times the value `12` appêars in a tuple (with `tuple.count()`)
+# Display how many times the value `12` appears in a tuple (with `<tuple name>.count()`)
 

@@ -15,6 +15,6 @@ print(len(coords))
 
 print(coords[2:])
 
-# Display how many times the value `12` appêars in a tuple (with `tuple.count()`)
+# Display how many times the value `12` appears in a tuple (with `<tuple name>.count()`)
 
 print(coords.count(12))
