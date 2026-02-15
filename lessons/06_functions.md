@@ -191,7 +191,7 @@ Prefer returning values instead.
 
 # 9. Conclusion
 
-Functions help you structure your programe like chapters in a book.
+Functions help you structure your program like chapters in a book.
 
 Instead of writing everything in one giant block, you split your logic into small, clear pieces:
 - one function to load data
