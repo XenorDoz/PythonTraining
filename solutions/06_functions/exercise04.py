@@ -6,6 +6,7 @@ def modify():
     x = 5
     print("Inside:", x)
 
+print(x)
 
 # 1. What will be printed ?
 
