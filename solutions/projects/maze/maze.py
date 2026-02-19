@@ -4,6 +4,8 @@ import ast
 maze = []                       # Will contain asked maze
 end_position : tuple[int, int]  # End position to check for the victory
 victory = False                 # Victory checker
+key_pressed = False             # Check so key is not spammed
+
 
 # Custom characters, replace with any character you want here:
 wall_char = "."
@@ -49,17 +51,29 @@ def print_maze():
         print(f"{line_string}")
 
 def get_key():
-    event = keyboard.read_event()
-    if event.event_type == keyboard.KEY_DOWN:
-        match event.name:
-            case "w":
-                print("up")
-            case "a":
-                print("left")
-            case "s":
-                print("down")
-            case "d":
-                print("right")
+    global key_pressed
+
+    while True:     # This is not an infinite loop because return
+        event = keyboard.read_event()
+
+        if event.event_type == keyboard.KEY_DOWN and not key_pressed:   # If we just pressed a key
+            key_pressed = True
+            return event.name
+
+        if event.event_type == keyboard.KEY_UP:     # When we release the key
+            key_pressed = False
+
+def convert_key_to_direction(key):
+    match key:
+        case "w":
+            return (-1, 0)
+        case "a":
+            return (0, -1)
+        case "s":
+            return (1, 0)
+        case "d":
+            return (0, 1)
+
 
 
 if __name__ == "__main__":
@@ -72,4 +86,7 @@ if __name__ == "__main__":
     # Game loop
     while not victory:
         print_maze()
+        key = get_key()
+        direction = convert_key_to_direction(key)
+        print(direction)
     pass
