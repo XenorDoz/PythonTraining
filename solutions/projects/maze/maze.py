@@ -115,9 +115,8 @@ def find_end():
     return (-1, -1)
 
 def is_end():
-    global victory
-    if player_position == end_position:
-        victory = True
+    return player_position == end_position
+        
 
 if __name__ == "__main__":
     # Loading the maze
@@ -136,5 +135,6 @@ if __name__ == "__main__":
         direction = convert_key_to_direction(key)
         if can_move(direction):
             move_player(direction)
-        is_end()
+        if is_end():
+            victory = True
     print("Congrats!")
