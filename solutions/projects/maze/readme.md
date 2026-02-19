@@ -19,6 +19,7 @@ C. Input handling
 - get_key()   
   Some help:  
   - `keyboard.read_event()` will wait for a key event, aka key pressed or released, and return it
+  - If you add `suppress=True` in the parameters of `read_event()`, this will prevent you from typing anywhere, and will simply read without typing the characters
   - `event_type` attribute on a keyboard event will tell you what kind of event it is, for example `KEY_UP` or `KEY_DOWN`
   - `name` attribute will tell you what key has triggered the event  
     You can use it like this:

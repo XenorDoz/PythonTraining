@@ -56,7 +56,7 @@ def get_key():
     global key_pressed
 
     while True:     # This is not an infinite loop because return
-        event = keyboard.read_event()
+        event = keyboard.read_event(suppress=True)
 
         if event.event_type == keyboard.KEY_DOWN and not key_pressed:   # If we just pressed a key
             key_pressed = True
@@ -138,5 +138,3 @@ if __name__ == "__main__":
             move_player(direction)
         is_end()
     print("Congrats!")
-
-# TODO Handle key press, rn it types in terminal or wherever cursor is active
