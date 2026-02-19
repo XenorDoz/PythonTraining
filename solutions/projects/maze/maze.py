@@ -1,7 +1,9 @@
 import keyboard     # Might want to type `pip install keyboard` if this gives you an error
 import ast          
 
-maze = []           # Will contain asked maze
+maze = []                       # Will contain asked maze
+end_position : tuple[int, int]  # End position to check for the victory
+victory = False                 # Victory checker
 
 # Custom characters, replace with any character you want here:
 wall_char = "."
@@ -9,8 +11,9 @@ empty_char = " "
 player_char = "O"
 end_char = "X"
 
-# We load the file into variable
-path = 'mazes.txt'
+# We load the file into variable 
+# We use replace so we can start the code from anywhere in the project
+path = __file__.replace("maze.py", "mazes.txt")
 
 def load_mazes():
     global maze
@@ -45,6 +48,18 @@ def print_maze():
             line_string += case + " "
         print(f"{line_string}")
 
+def get_key():
+    event = keyboard.read_event()
+    if event.event_type == keyboard.KEY_DOWN:
+        match event.name:
+            case "w":
+                print("up")
+            case "a":
+                print("left")
+            case "s":
+                print("down")
+            case "d":
+                print("right")
 
 
 if __name__ == "__main__":
@@ -54,6 +69,7 @@ if __name__ == "__main__":
     # Converting the maze with custom symbols
     convert_symbols()
 
-
-    print_maze()
+    # Game loop
+    while not victory:
+        print_maze()
     pass
