@@ -28,13 +28,14 @@ def load_mazes():
     # So everything between [] will be transfored into arrays
     mazes = ast.literal_eval(mazes)
 
-
-    # Put here your code!
+    #######################
+    # Put here your code! #
+    #######################
 
 def convert_symbols():
     """
     Takes the global maze variable
-    Modify its values with customizable chars
+    Modify its values with customizable chars given at the top of the script
     Simply aesthetics stuff, but great looking!
     """
     pass
