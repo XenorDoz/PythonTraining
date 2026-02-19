@@ -1,11 +1,49 @@
-maze[0] is just an empty square to test moves
-next ones are mazes
+This is a small project where you should be able to play and solve mazes!  
+
+You'll have to code the whole engine, I've provided some mazes in the `mazes.txt`.  
+I've also already given you the script to convert this file into an array that would look like this:
+```python
+[
+  [maze0],
+  [maze1],
+  [maze2],
+  [maze3]
+]
+```
+
+Every maze in here is in fact an array of arrays, like this:
+```python
+maze: 
+      [
+        [1,1,1,1,1],
+        [1,0,0,0,1],
+        [1,0,0,0,1],
+        [1,0,0,0,1],
+        [1,1,1,1,1],
+      ]
+
+# So, the file gives you: 
+[
+  [
+    [1,1,1,1,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,1,1,1,1],
+  ],
+  [maze1],
+  ...
+]
+```
+
 
 I've given you basic script, but that does not limit you to that, you can add, remove, modify functions, same with arguments (parameters)!  
 It's just a guideline to help, fitting what's after this text!
 
+*maze[0] is just an empty square to test moves,  
+next ones are real mazes*
 
-A. Maze loading
+### A. Maze loading
 - load_maze()  
   choose what maze will be used, user should type a number between 0 and the number of mazes - 1
 - convert_symbols()  
@@ -19,10 +57,10 @@ A. Maze loading
   *You might want a loop using `enumerate(variable)` to grab indexes and values, but might not be necessary too*  
   *Use it as* `for y, line in enumerate(maze):`*, this will give you the index in y, and the value in line*
 
-B. Maze display
+### B. Maze display
 - print_maze()
 
-C. Input handling
+### C. Input handling
 - get_key()   
   Some help:  
   - `keyboard.read_event()` will wait for a key event, aka key pressed or released, and return it
@@ -62,7 +100,7 @@ C. Input handling
   # testing again and again, so that reduces CPU usage
   ```  
   
-D. Player logic
+### D. Player logic
 - find_player()
 - can_move(move)  
   Checks if it is not outside of the array   
@@ -71,16 +109,19 @@ D. Player logic
 - move_player(move)  
   Move the player in the maze array
   
-E. Victory logic
+### E. Victory logic
 - find_end() -> returns tuple of position of exit  
   *You could add this in the find_player() logic so you don't have to check twice the array, but that's optional.*
 - is_end -> cheks if player position is on the exit
 
-F. Game loop
+### F. Game loop
 
-ask for what maze (load_maze function)  
+```
+load mazes and ask for what maze (load_maze function)  
+convert symbols if you want
 
-find where is the player and the end
+find where are the player and the end
+
 while not victory:  
     print maze  
     read for key (not input)  
@@ -90,4 +131,4 @@ while not victory:
     is_end ->
       if is end, victory becomes true
 
-got to the end of the maze
+```
