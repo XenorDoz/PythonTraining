@@ -2,10 +2,12 @@ import keyboard     # Might want to type `pip install keyboard` if this gives yo
 import ast          
 
 maze = []                       # Will contain asked maze
-end_position : tuple[int, int]  # End position to check for the victory
 victory = False                 # Victory checker
 key_pressed = False             # Check so key is not spammed
 
+
+end_position : tuple[int, int]  # End position to check for the victory
+player_position: tuple[int, int]
 
 # Custom characters, replace with any character you want here:
 wall_char = "."
@@ -74,7 +76,48 @@ def convert_key_to_direction(key):
         case "d":
             return (0, 1)
 
+def find_player():
+    for y, line in enumerate(maze):
+        for x, case in enumerate(line):
+            if case == player_char:
+                return (y, x)
+    return (-1, -1)
 
+def can_move(move):
+    next_position = (player_position[0] + move[0],
+                     player_position[1] + move[1])
+    
+    # If outside of top or left side of the array
+    if next_position[0] < 0 or next_position[1] < 0:
+        return False
+    # If outside of right or bottom side of the array
+    if next_position[0] >= len(maze) and next_position[1] >= len(maze[1]):
+        return False 
+
+    # If the next position is a wall
+    if maze[next_position[0]][next_position[1]] == wall_char:
+        return False
+    
+    return True
+
+def move_player(move):
+    global maze, player_position
+    maze[player_position[0]][player_position[1]] = empty_char   # We empty the player position in the array
+    new_position = (player_position[0] + move[0], player_position[1] + move[1])
+    maze[new_position[0]][new_position[1]] = player_char                        # We add back the player in the array
+    player_position = new_position                                      # We save its new position
+
+def find_end():
+    for y, line in enumerate(maze):
+        for x, case in enumerate(line):
+            if case == end_char:
+                return (y, x)
+    return (-1, -1)
+
+def is_end():
+    global victory
+    if player_position == end_position:
+        victory = True
 
 if __name__ == "__main__":
     # Loading the maze
@@ -83,10 +126,17 @@ if __name__ == "__main__":
     # Converting the maze with custom symbols
     convert_symbols()
 
+    # Find the positions needed
+    player_position = find_player()
+    end_position = find_end()
     # Game loop
     while not victory:
         print_maze()
         key = get_key()
         direction = convert_key_to_direction(key)
-        print(direction)
-    pass
+        if can_move(direction):
+            move_player(direction)
+        is_end()
+    print("Congrats!")
+
+# TODO Handle key press, rn it types in terminal or wherever cursor is active

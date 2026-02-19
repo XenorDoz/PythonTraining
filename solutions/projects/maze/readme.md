@@ -56,25 +56,30 @@ C. Input handling
   
 D. Player logic
 - find_player()
-- can_move(player, move)
-- move_player(move)
+- can_move(move)  
+  Checks if it is not outside of the array   
+  (false if `x or y < 0` and if `x > size of line` and if `y > size of column`) *Don't forget that an array starts at 0!*  
+  Checks if it is not a wall
+- move_player(move)  
+  Move the player in the maze array
   
 E. Victory logic
-- find_exit() -> returns tuple of position of exit
+- find_end() -> returns tuple of position of exit  
+  *You could add this in the find_player() logic so you don't have to check twice the array, but that's optional.*
 - is_end -> cheks if player position is on the exit
 
 F. Game loop
 
 ask for what maze (load_maze function)  
 
-find_exit()
+find where is the player and the end
 while not victory:  
     print maze  
     read for key (not input)  
     convert key to direction  
-    try to move in that direction  
-        if you can, move  
-    is_end
+    try to move in that direction ->
+        if you can, move and update player position  
+    is_end ->
       if is end, victory becomes true
 
 got to the end of the maze
